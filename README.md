@@ -9,3 +9,6 @@ Press spacebar to shoot
 
 Core mechanic:
 Shoot til you die.
+
+Resources:
+free sprites taken from https://kenney.nl/assets/space-shooter-redux
