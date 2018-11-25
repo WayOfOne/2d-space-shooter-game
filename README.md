@@ -12,3 +12,4 @@ Shoot til you die.
 
 Resources:
 free sprites taken from https://kenney.nl/assets/space-shooter-redux
+background from : https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
