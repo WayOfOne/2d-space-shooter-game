@@ -113,6 +113,98 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &101774566
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152046398545868, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_Name
+      value: Top Laser Destroyer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &879312269
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316368394271600, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152046398545868, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+      propertyPath: m_Name
+      value: Bottom Laser Destroyer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: baa7f89338eb0cf44a1e470365a45ba9, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &923800972
 Prefab:
   m_ObjectHideFlags: 0
