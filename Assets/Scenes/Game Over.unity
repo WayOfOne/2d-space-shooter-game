@@ -581,6 +581,21 @@ Prefab:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 114078435272997354, guid: d83710a55320f2640aa7a1fe7f76076d,
+        type: 2}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078435272997354, guid: d83710a55320f2640aa7a1fe7f76076d,
+        type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078435272997354, guid: d83710a55320f2640aa7a1fe7f76076d,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d83710a55320f2640aa7a1fe7f76076d, type: 2}
   m_IsPrefabAsset: 0
