@@ -16,6 +16,7 @@ Unity Version: 2018.2.17f1
 * Infinite wave spawn until the player dies
 * Score displayed on top right in white
 * player HP displayed on bottom left in yellow
+![alt text](https://github.com/WayOfOne/2d-space-shooter-game/blob/master/Assets/Sprites/gamedemo.png)
 
 
 # Resources
