@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+//bigger slower enemy bullets that can also go diagonal
+public class Enemy2 : MonoBehaviour {
 
-    [SerializeField] float health = 100;
+    [SerializeField] float health = 200;
     [SerializeField] float shotCount;
     [SerializeField] float projectileSpeed = 5;
-    [SerializeField] float min= .2f;
+    [SerializeField] float min = .2f;
     [SerializeField] float max = 2f;
     [SerializeField] GameObject projectile;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         shotCount = Random.Range(min, max);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         ShootingRate();
-	}
+    }
 
     //randomize firing rate
     private void ShootingRate()
     {
         shotCount -= Time.deltaTime;
-        if(shotCount <= 0f)
+        if (shotCount <= 0f)
         {
             Shoot();
             shotCount = Random.Range(min, max);
@@ -35,7 +38,7 @@ public class Enemy : MonoBehaviour {
     private void Shoot()
     {
         GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bullet.transform.position.x + Random.Range(-1f, .1f), -projectileSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

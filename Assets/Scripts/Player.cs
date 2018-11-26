@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-
+    [Header("Player")]
+    [SerializeField] int health = 1000;
     [SerializeField] float speed = 5f;
     [SerializeField] float xPadding = .2f;
     [SerializeField] float topYPadding = 1f;
     [SerializeField] float bottomYPadding = .2f;
+
+    [Header("laser")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float laserSpeed = 10f;
     [SerializeField] float firingRate = 0.05f;
@@ -27,6 +30,22 @@ public class Player : MonoBehaviour {
         Move();
         Shoot();
 	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Damage damageDealer = collision.gameObject.GetComponent<Damage>();
+        ProcessDamage(damageDealer);
+    }
+
+    private void ProcessDamage(Damage damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+
+        }
+    }
 
     //shoot continously when the fire button is held down
     private void Shoot()
