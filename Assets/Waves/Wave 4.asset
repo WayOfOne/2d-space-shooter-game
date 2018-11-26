@@ -17,4 +17,4 @@ MonoBehaviour:
   spawnRate: 0.5
   spawnRandomRate: 0.3
   numberOfEnemies: 10
-  moveSpeed: 2
+  moveSpeed: 3.14
