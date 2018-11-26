@@ -7,8 +7,12 @@ Unity Version: 2018.2.17f1
     * Arrow keys or WASD to move the player ship up down left and right
     * Space bar or left mouse click to shoot. Hold down to shoot continuously ( Don't want you to get capel tunnel now)
 
-Core mechanic:
-Shoot til you die.
+# Game mechanic:
+* Shoot til you die. 
+* Players can move up down left and right but cannot loop around the map
+* Players are restricted from entering the top 20% of the map to avoid collisions from spawn points
+* Infinite wave spawn until the player dies
+
 
 # Resources
 * /Sprites/Kenny assets/ and /Sounds/Kenny assets contains sprites and sounds taken from https://kenney.nl/assets/space-shooter-redux
