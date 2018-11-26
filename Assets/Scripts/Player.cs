@@ -34,6 +34,11 @@ public class Player : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Damage damageDealer = collision.gameObject.GetComponent<Damage>();
+        //checking if there's a damage dealer
+        if (!damageDealer)
+        {
+            return;
+        }
         ProcessDamage(damageDealer);
     }
 

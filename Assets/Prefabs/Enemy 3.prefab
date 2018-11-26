@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114878339313583008}
   - component: {fileID: 58671729522244300}
   - component: {fileID: 114447839382132180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   projectileSpeed: 1.1
   min: 0.5
   max: 3
-  projectile: {fileID: 0}
+  projectile: {fileID: 1018159958241464, guid: 728f4350cb523774596858c3b109bb4a, type: 2}
 --- !u!114 &114878339313583008
 MonoBehaviour:
   m_ObjectHideFlags: 1
