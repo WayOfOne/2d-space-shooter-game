@@ -10,6 +10,11 @@ public class Enemy : MonoBehaviour {
     [SerializeField] float min= .2f;
     [SerializeField] float max = 2f;
     [SerializeField] GameObject projectile;
+    [SerializeField] GameObject deathEffect;
+    [SerializeField] float explosionDuration = .5f;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] [Range(0,1)] float soundVolume = 0.6f;
+
 
     // Use this for initialization
     void Start () {
@@ -42,14 +47,20 @@ public class Enemy : MonoBehaviour {
     {
         Damage damageDealer = collision.gameObject.GetComponent<Damage>();
         ProcessDamage(damageDealer);
+        if (!damageDealer) { return; }
     }
 
     private void ProcessDamage(Damage damageDealer)
     {
         health -= damageDealer.GetDamage();
+        damageDealer.Hit(); //destroys the bullet
+        //death
         if (health <= 0)
         {
             Destroy(gameObject);
+            GameObject explosion = Instantiate(deathEffect, transform.position, transform.rotation);
+            Destroy(explosion, explosionDuration);
+            AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, soundVolume);
 
         }
     }

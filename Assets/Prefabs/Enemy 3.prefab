@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1919707557326554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -69,12 +69,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 116f20c89139a1747925325b400e1064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 1000
   shotCount: 0
-  projectileSpeed: 1.1
-  min: 0.5
-  max: 3
+  projectileSpeed: 1
+  min: 0.8
+  max: 2
   projectile: {fileID: 1018159958241464, guid: 728f4350cb523774596858c3b109bb4a, type: 2}
+  deathEffect: {fileID: 1751124516043538, guid: 3899fd6c2c6724e4db9631a0db1632cd,
+    type: 2}
+  explosionDuration: 0.5
+  deathSound: {fileID: 8300000, guid: c18a3769264ee794d89b350c222ab44b, type: 3}
+  soundVolume: 0.6
 --- !u!114 &114878339313583008
 MonoBehaviour:
   m_ObjectHideFlags: 1

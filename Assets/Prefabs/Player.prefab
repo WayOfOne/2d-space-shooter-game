@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212132792672723112}
   - component: {fileID: 114567709008575882}
   - component: {fileID: 60925489111886238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -92,6 +92,10 @@ MonoBehaviour:
   xPadding: 0.2
   topYPadding: 1
   bottomYPadding: 0.2
+  deathSound: {fileID: 8300000, guid: 8a7cd6cdb971a68478172367aef539e6, type: 3}
+  laserSound: {fileID: 8300000, guid: 3513444288680ba448b242951be96f4e, type: 3}
+  deathVolume: 1
+  laserVolume: 0.096
   laserPrefab: {fileID: 1017335591140396, guid: 536406f0146254c4fab767351c3fbdd1,
     type: 2}
   laserSpeed: 10

@@ -11,8 +11,9 @@ Core mechanic:
 Shoot til you die.
 
 # Resources
-* /Sprites/Kenny assets/ contains sprites and sounds taken from https://kenney.nl/assets/space-shooter-redux
+* /Sprites/Kenny assets/ and /Sounds/Kenny assets contains sprites and sounds taken from https://kenney.nl/assets/space-shooter-redux
 * /Sprites/DinV backgrounds/ contains background picture from : https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
+* /Sounds/Orbit Beat 130 taken from : https://www.dl-sounds.com/royalty-free/orbit-beat-130/
 * tutorials used: 
     1. https://unity3d.com/learn/tutorials/s/space-shooter-tutorial
     2. https://www.udemy.com/unitycourse/

@@ -86,6 +86,11 @@ MonoBehaviour:
   min: 0.2
   max: 3
   projectile: {fileID: 1031543545121298, guid: 0c283a3517fc34f478a839e4fc5c08f3, type: 2}
+  deathEffect: {fileID: 1751124516043538, guid: 3899fd6c2c6724e4db9631a0db1632cd,
+    type: 2}
+  explosionDuration: 0.5
+  deathSound: {fileID: 8300000, guid: c18a3769264ee794d89b350c222ab44b, type: 3}
+  soundVolume: 0.6
 --- !u!212 &212070920625672028
 SpriteRenderer:
   m_ObjectHideFlags: 1
