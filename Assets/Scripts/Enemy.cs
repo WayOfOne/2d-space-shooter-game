@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    [Header("Stats")]
     [SerializeField] float health = 100;
+    [SerializeField] int value  = 100;
+
+    [Header("Shooting")]
     [SerializeField] float shotCount;
     [SerializeField] float projectileSpeed = 5;
     [SerializeField] float min= .2f;
     [SerializeField] float max = 2f;
+
+    [Header("SFX/VFX")]
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject deathEffect;
     [SerializeField] float explosionDuration = .5f;
@@ -57,6 +63,9 @@ public class Enemy : MonoBehaviour {
         //death, destroy gameobject, create explosion particle and play death sound
         if (health <= 0)
         {
+            //increase score
+            FindObjectOfType<GameSession>().addScore(value);
+
             Destroy(gameObject);
             GameObject explosion = Instantiate(deathEffect, transform.position, transform.rotation);
             Destroy(explosion, explosionDuration);
