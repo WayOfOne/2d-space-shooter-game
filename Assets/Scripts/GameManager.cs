@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
+    int score; 
 
     private void Awake()
     {
@@ -23,6 +24,21 @@ public class GameManager : MonoBehaviour
     public void LoadScene(int sceneNumber)
     {
         SceneManager.LoadScene(sceneNumber);
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public void addScore(int num)
+    {
+        score += num;
+    }
+
+    public void ResetGame()
+    {
+        Destroy(gameObject);
     }
 
 }

@@ -7,6 +7,7 @@ public class Background : MonoBehaviour {
     float backgroundSpeed = .01f;
     Material material;
     Vector2 offset;
+
 	// Use this for initialization
 	void Start () {
         material = GetComponent<Renderer>().material;

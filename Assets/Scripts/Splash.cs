@@ -16,8 +16,4 @@ public class Splash : MonoBehaviour {
         GameManager.Instance.LoadScene(1);
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }

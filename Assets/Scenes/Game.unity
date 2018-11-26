@@ -720,7 +720,55 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 224474302659107204, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 63.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224474302659107204, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 68.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224474302659107204, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224474302659107204, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224936968200805394, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -214.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224936968200805394, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 224936968200805394, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224936968200805394, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114733331550980056, guid: 1ce498828d00d2644946093e58cf1ffa,
+        type: 2}
+      propertyPath: m_Text
+      value: '1000
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114080620543362206, guid: 1ce498828d00d2644946093e58cf1ffa, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 1ce498828d00d2644946093e58cf1ffa, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1757762069
