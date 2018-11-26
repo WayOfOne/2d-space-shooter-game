@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour {
     {
         health -= damageDealer.GetDamage();
         damageDealer.Hit(); //destroys the bullet
-        //death
+        //death, destroy gameobject, create explosion particle and play death sound
         if (health <= 0)
         {
             Destroy(gameObject);

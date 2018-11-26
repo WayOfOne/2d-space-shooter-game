@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ebc3a513dfa50a9479d38cb38b664680
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Astrobia
+  fontNames:
+  - Astrobia
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b84ba212050e7ca4bb7001d99bdd24bf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

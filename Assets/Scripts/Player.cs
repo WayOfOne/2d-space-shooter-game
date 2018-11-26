@@ -13,8 +13,10 @@ public class Player : MonoBehaviour {
     [SerializeField] float bottomYPadding = .2f;
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip laserSound;
+    [SerializeField] AudioClip shieldSound;
     [SerializeField] [Range(0, 1)] float deathVolume = 0.6f;
     [SerializeField] [Range(0, 1)] float laserVolume = 0.1f;
+    [SerializeField] [Range(0, 1)] float shieldVolume = 0.6f;
 
     [Header("laser")]
     [SerializeField] GameObject laserPrefab;
@@ -50,9 +52,11 @@ public class Player : MonoBehaviour {
     {
         health -= damageDealer.GetDamage();
         damageDealer.Hit(); //destroys the bullet 
+        AudioSource.PlayClipAtPoint(shieldSound, Camera.main.transform.position, shieldVolume);
         //death, destroy gameobject, create explosion particle and play death sound
         if (health <= 0)
         {
+            FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathVolume);
         }
