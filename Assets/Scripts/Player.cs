@@ -1,11 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+
     [SerializeField] float speed = 5f;
-    [SerializeField] float yPadding = 3f, xPadding = .5f;
+    [SerializeField] float xPadding = .2f;
+    [SerializeField] float topYPadding = 1f;
+    [SerializeField] float bottomYPadding = .2f;
+    [SerializeField] GameObject laserPrefab;
+    [SerializeField] float laserSpeed = 10f;
 
     float xMin, xMax, yMin, yMax;
 
@@ -17,7 +23,18 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Move();
+        Shoot();
 	}
+
+    private void Shoot()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
+            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
+
+        }
+    }
 
     //set the boundary so that the player ship doesn't move off the camera screen
     private void SetBoundary()
@@ -27,8 +44,8 @@ public class Player : MonoBehaviour {
         xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + xPadding;
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - xPadding;
 
-        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + yPadding;
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - yPadding;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + bottomYPadding;
+        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - topYPadding;
     }
 
     //moving the player ship alone the x and y axis using the input arrows or wasd
