@@ -12,6 +12,8 @@ Unity Version: 2018.2.17f1
 * Players can move up down left and right but cannot loop around the map
 * Players are restricted from entering the top 20% of the map to avoid collisions from spawn points
 * Infinite wave spawn until the player dies
+* Score displayed on top right in white
+* player HP displayed on bottom left in yellow
 
 
 # Resources

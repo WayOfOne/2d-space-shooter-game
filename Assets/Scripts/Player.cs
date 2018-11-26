@@ -37,6 +37,11 @@ public class Player : MonoBehaviour {
         Shoot();
 	}
 
+    public int GetHP()
+    {
+        return health;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Damage damageDealer = collision.gameObject.GetComponent<Damage>();

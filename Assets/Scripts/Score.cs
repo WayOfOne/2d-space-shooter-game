@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-    Text score;
-    GameSession session;
+    Text health;
+    Player player;
 
 	// Use this for initialization
 	void Start () {
-        score = GetComponent<Text>();
-        session = FindObjectOfType<GameSession>();
+        health = GetComponent<Text>();
+        player = FindObjectOfType<Player>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        score.text = session.GetScore().ToString();
+        health.text = player.GetHP().ToString();
 	}
 }
